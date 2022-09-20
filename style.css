@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap');
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --full-background: #F4DFD0;
+    --nav-header: #7D5A50;
+    --text-color: #FCDEC0;
+    --contain-color: #E5B299;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: var(--contain-color);
+
+    /* background-color: rgba(231, 228, 228, 0.931); */
+}
+
+.header{
+    position: fixed;
+    color: var(--text-color);
+    width: 100%;
+    background-color: var(--nav-header);
+    opacity: 0.95;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 6px;
+    box-shadow: 5px 0 5px 5px rgba(0, 0, 0, 0.473);
+    z-index: 555;
+    /* border: 1px solid black; */
+    
+}
+
+
+.logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.tea-cup{
+    margin-left: 10px;
+    width: 28px;
+    
+}
+
+/* -----------hambuger list------------- */
+
+.line{
+    display: none;
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+
+.hamburger{
+    /* border: 1px solid black; */
+    width: 35px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------- ending of hamuburger menu-------------- */
+
+.nav{
+    display: flex;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav li{
+    display: flex;
+    align-items: center;   
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 1.05em;
+    font-weight: bolder;   
+    transition: background-color, color 0.3s;
+}
+
+.nav a:hover{
+    background-color: var(--text-color);
+    color: var(--nav-header);
+    border-radius: 20px;
+}
+
+.welcome{
+    /* height: 90vh; */
+    /* border: 2px solid green; */
+}
+
+.welcome-background{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.746), rgba(255, 255, 255, 0)), url(./image/set-wood-stubs-cup-tea-tea-herbs-bowls-dark-textured-background-flat-lay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.welcome-text{
+    /* border: 2px solid blueviolet; */
+    height: 100%;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+.sub-text{
+    /* border: 2px solid blueviolet; */
+    color: white;
+    font-size: 1.6rem; 
+    font-weight: bolder;
+    text-shadow: 5px 5px 4px black;
+} 
+/* ---About Content--- */
+
+
+.about{
+    background-color: var(--contain-color);
+    height: 100%;
+    padding: 50px;
+    /* border: 5px solid black; */
+    /* background-color: rgba(231, 228, 228, 0.931); */
+    
+}
+
+.about-head{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-content{
+    margin-right: 70px;
+    flex: 1 1 200px;
+    padding: 10px;
+}
+
+
+.about-container{
+    /* background-color: rgba(255, 251, 251, 0.301); */
+    /* border: 2px solid blue; */
+    background-color: var(--full-background);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+.about-img-content{
+    flex: 1 1 100px;
+    /* border: 2px solid black;     */
+}
+
+
+.about-img{
+    padding: 10px;
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+
+.top-line,
+.about-text{
+    padding: 5px;
+}
+
+.about-heading{
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+/* ------------product-------------- */
+
+.product{
+    /* border: 2px solid black; */
+    /* box-shadow: -5px 0px 5px black, 10px 0px 5px black; */
+    width: 100%;
+    height: 100%;
+
+}
+
+.main-menu{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+.product-head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+
+
+.product-menu{
+    /* border: 5px solid black; */
+    background-color: var(--full-background);
+    display: flex;
+    flex-basis: 30%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0px grey;
+    
+   
+}
+
+.menu-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1{
+    display: block;
+    width: 15vw;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 5px;
+    border-radius: 14%;
+}
+
+.menu-text{
+    text-align: center;
+   margin: auto 0;
+   padding: 15px;
+
+}
+
+.menu-head{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.list-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list-1{
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 0px black;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.quantity{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.list-2{
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 0px black;
+    padding: 5px;
+    width: 100%;
+    
+    
+}
+
+.prices{
+    font-size: 1em; 
+    font-weight: 800;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+
+}
+
+.list-1:hover{
+    background-color: var(--nav-header);
+    color: var(--text-color);
+}
+
+.list-2:hover{
+    background-color: var(--nav-header);
+    color: var(--text-color);
+}
+
+
+
+
+/* -----------Contact------------ */
+
+.contact{
+    /* border: 1px solid black; */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    
+    
+}
+
+.contact-content{
+    background-color: var(--full-background);
+    flex-basis: 90%;
+    height: 100%;
+    border-radius: 5em;
+    padding: 20px;
+    
+}
+
+.contact-head{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.contact-para{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.contact-para p{
+    padding: 5px;
+}
+
+.social-media{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.social-media a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.3em;
+    color: black;
+}
+
+.social-media i{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+/* -----------Footer--------------- */
+
+.footer{
+    width: 100%;
+    color: var(--text-color);
+    font-weight: 900;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 20px;
+    background-color: var(--nav-header);
+    font-size: 1.3em;
+}
+
+
+
+@media screen and (max-width:950px){
+    .product-menu{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+
+    .box-1{
+        width: 100%;
+    }
+
+    .logo{
+        margin-left: 15px;
+    }
+
+
+
+}
+
+@media screen and (max-width:680px){
+    .product-menu{
+        flex-basis: 40%;
+    }
+
+    .nav{
+        display: none;
+        background-color: #7D5A50;
+        position: fixed;
+        display: flex;
+        top: 59px;
+        left: 100%;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+.line{
+    display: block;
+}
+
+    #check-box:checked ~ .nav{
+        display: block;
+        left: 50%;
+    } 
+
+    #check-box:checked ~ .tick-box i::before{
+        content: "\f00d";
+    } 
+
+    .line i{
+        font-size: 1.4em;
+    }
+
+
+    .nav ul{
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav a{
+        margin: auto;
+        padding: 50px;
+        font-size: 1.25em;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-left: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width:450px){
+    .product-menu{
+        flex-basis: 80%;
+    }
+
+    .contact-content{
+    flex-basis: 80%;
+    padding: 5px;
+    
+}
+
+
+}
+
+@media screen and (max-width:375px){
+    .contact-content{
+        flex-basis: 90%;
+        padding: 2px;
+
+    
+}
+    .logo{
+        margin-left: 5px;
+    }
+
+}
+
